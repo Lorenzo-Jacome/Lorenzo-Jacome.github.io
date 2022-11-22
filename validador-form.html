@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Valida cupón</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+        <!--QUITAR!!! SOLO PARA DEV-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+
+        <!--Iconos de Fontawesome-->
+        <script src="https://kit.fontawesome.com/0f63159f9e.js" crossorigin="anonymous"></script>
+
+        <!--Fonts de Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="info-display">
+            <div id="header">
+                <img src="./images/cts-logov1.png" alt="Travel Leaders" id="header-logo">
+                <h1 id="header-title">Validador de cupón</h1>
+            </div>
+    
+            <div id="content">
+                <h3 id="main-message"><strong>Comprueba</strong> que no eres un <strong>robot</strong> para validar tu <strong>cupón</strong></h3>
+
+                <div id="cupon-data">
+                    <h3>Número de cupón:</h3>
+                    <p id="num-cupon-display">10293847567</p>
+
+                    <h3>Reserva:</h3>
+                    <p id="num-reserva-display">32983298732432</p>
+
+                    <div id="validate-button">
+                        <button onclick="redirectToValidation()">Validar cupón</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+    
+            <div id="footer">
+                <h4>Aviso de privacidad</h4>
+            </div>
+        </div>
+        
+
+    </body>
+    <script src="validator-form.js"></script>
+</html>
