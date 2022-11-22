@@ -3,7 +3,7 @@ let numeroCuponDisp = document.getElementById("num-cupon-display");
 let numeroReservaDisp = document.getElementById("num-reserva-display");
 
 const urlParams = new URLSearchParams(window.location.search);
-const urlToValidate = "file:///C:/Users/ljacome/OneDrive%20-%20Corporate%20Travel%20Services%20Wolrdwide%20SAPI%20de%20CV/Escritorio/PantallasQR/index.html";
+const urlToValidate = "https://lorenzo-jacome.github.io/index.html";
 const numCupon = urlParams.get('numerocupon');
 const numReserva = urlParams.get('numeroreserva');
 
