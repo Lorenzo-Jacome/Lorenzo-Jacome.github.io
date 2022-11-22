@@ -8,7 +8,18 @@
 
         <!--QUITAR!!! SOLO PARA DEV-->
         <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-
+        
+        <!-- Script para reCAPTCHA -->
+        <script>
+            function onLoadCallBack{
+                grecaptcha.render('recaptcha', {
+                    sitekey: '6Lf3ISgjAAAAAJcIg5k6Y3fhVXkdXpzhAaMgaq8S',
+                    callback: successCallback
+                });
+            }
+        </script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onLoadCallBack&render=explicit" async defer></script>
+        
         <!--Iconos de Fontawesome-->
         <script src="https://kit.fontawesome.com/0f63159f9e.js" crossorigin="anonymous"></script>
 
@@ -33,6 +44,10 @@
 
                     <h3>Reserva:</h3>
                     <p id="num-reserva-display">32983298732432</p>
+                    
+                    <div id="recaptcha" class="g-recaptcha">
+                        
+                    </div>
 
                     <div id="validate-button">
                         <button onclick="redirectToValidation()">Validar cupón</button>
