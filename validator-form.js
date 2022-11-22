@@ -18,6 +18,10 @@ const redirectToValidation = () => {
     window.location.href = urlToValidate + "?" +queryString.toString();
 };
 
+const successCallback = (token) => {
+    console.log(token);
+};
+
 //---FUNCIONALIDAD---
 numeroCuponDisp.innerHTML = numCupon;
 numeroReservaDisp.innerHTML = numReserva;
