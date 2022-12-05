@@ -259,7 +259,7 @@
   
 
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
     body{
         padding: 4% 20% 3% 20%;
         background-color: #404955;
